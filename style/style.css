@@ -1,7 +1,23 @@
-h3{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: red ;
-    font-display: flex;
-    display: flex;
-    background-image: -moz-radial-gradient('image/FreeVector-Thumbs-Up-Vector.jpg');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    background-image: url('../image/monkey.avif');
+    background-size: cover;
+    height: 100vh;
+    background-position: bottom center;
+    
+      
+}
+.hero h1{
+    color: rgb(117, 177, 78); 
+    font-size: 100px;
+    text-align: center;
+    font-weight: 900;
+    font-family: cursive;
+    word-spacing: 40px;
+    letter-spacing: 20px;
+    padding-top: 60px;
 }
