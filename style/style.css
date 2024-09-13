@@ -1,0 +1,7 @@
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red ;
+    font-display: flex;
+    display: flex;
+    background-image: -moz-radial-gradient('image/FreeVector-Thumbs-Up-Vector.jpg');
+}
