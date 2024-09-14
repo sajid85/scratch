@@ -1,23 +1,86 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
     margin: 0;
     padding: 0;
+    font-family: "Lato", sans-serif;
 }
 
-.hero{
+.hero {
     background-image: url('../image/monkey.avif');
     background-size: cover;
-    height: 100vh;
+    height: 230vh;
     background-position: bottom center;
-    
-      
 }
-.hero h1{
-    color: rgb(117, 177, 78); 
+
+.hero h1 {
+    color: rgb(117, 177, 78);
     font-size: 100px;
-    text-align: center;
+    text-align:center;
     font-weight: 900;
     font-family: cursive;
     word-spacing: 40px;
     letter-spacing: 20px;
     padding-top: 60px;
+}
+
+.eassy, #type {
+    width: 80%;
+    margin: 60px auto;
+    background-color: rgb(197, 158, 114);
+    padding: 20px;
+    border-color: blueviolet;
+    border-style: groove;
+}
+
+.eassy h2 {
+    text-align: center;
+    font-size: 48px;
+    border-color: black;
+    border-width: 2px;
+    border-style: groove;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.paragraph {
+    font-size: 20px;
+    line-height: 2em;
+}
+
+#type h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.monkey-item {
+    margin-bottom: 20px;
+}
+
+.monkey-item button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #3e8e41;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.monkey-name {
+    margin-top: 10px;
+}
+
+.monkey-name input {
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
