@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     font-family: "Lato", sans-serif;
-    box-sizing: border-box; /* Includes padding/border in width calculations */
+    box-sizing: border-box;
 }
 
 html, body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
 }
 
 .hero {
@@ -16,7 +15,7 @@ html, body {
     height: 230vh;
     background-position: bottom center;
     color: tomato;
-    background-image: url('../image/monkey.avif');
+    background-image: url('../image/monkey.avif'); 
 }
 
 .hero h1 {
@@ -37,7 +36,7 @@ html, body {
     padding: 20px;
     text-align: center;
     background-repeat: no-repeat;
-    max-width: 100%; /* Prevent overflowing */
+    max-width: 100%;
 }
 
 .eassy h2, #type {
@@ -69,7 +68,7 @@ html, body {
     flex-direction: space-between;
     width: 100%;
     gap: 30px;
-    padding: 0 15px; /* Add padding to avoid touching screen edges */
+    padding: 0 15px;
 }
 
 .monkey-name {
@@ -82,9 +81,15 @@ html, body {
     margin: 60px auto;
     padding: 20px;
     text-align: center;
-    background: linear-gradient(to right, rgb(159, 159, 194), rgb(187, 128, 187));
+    background: linear-gradient(to right, rgb(159, 159, 194), rgb(187, 128, 187)); 
     color: rgb(50, 38, 122);
-    max-width: 100%; /* Prevent overflowing */
+    max-width: 100%;
+}
+
+/* Styling for zoomed-in elements */
+.zoomed {
+    transform: scale(1.5); /* Zoom in */
+    transition: transform 0.3s ease;
 }
 
 /* Media query for tablets */
@@ -138,4 +143,18 @@ html, body {
     .paragraph {
         font-size: 16px;
     }
+}
+.to-continued {
+    text-align: center;
+    font-size: 90px; 
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+
+.credits {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
 }
