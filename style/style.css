@@ -1,41 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     font-family: "Lato", sans-serif;
+    box-sizing: border-box; /* Includes padding/border in width calculations */
+}
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .hero {
-    background-image: url('../image/monkey.avif');
     background-size: cover;
     height: 230vh;
     background-position: bottom center;
+    color: tomato;
+    background-image: url('../image/monkey.avif');
 }
 
 .hero h1 {
-    color: rgb(117, 177, 78);
-    font-size: 100px;
-    text-align:center;
+    font-size: 500px;
+    text-align: center;
     font-weight: 900;
     font-family: cursive;
     word-spacing: 40px;
     letter-spacing: 20px;
     padding-top: 60px;
+    color: dark green;
 }
 
 .eassy, #type {
+    color: dark green;
     width: 80%;
     margin: 60px auto;
-    background-color: rgb(197, 158, 114);
     padding: 20px;
-    border-color: blueviolet;
-    border-style: groove;
+    text-align: center;
+    background-repeat: no-repeat;
+    max-width: 100%; /* Prevent overflowing */
 }
 
-.eassy h2 {
+.eassy h2, #type {
     text-align: center;
     font-size: 48px;
-    border-color: black;
+    border-color: rgb(201, 70, 19);
     border-width: 2px;
     border-style: groove;
     border-top: 0;
@@ -48,6 +56,7 @@
 .paragraph {
     font-size: 20px;
     line-height: 2em;
+    text-align: center;
 }
 
 #type h1 {
@@ -55,32 +64,78 @@
     margin-bottom: 30px;
 }
 
-.monkey-item {
-    margin-bottom: 20px;
-}
-
-.monkey-item button {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #3e8e41;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.image-container img {
+#type {
+    display: flex;
+    flex-direction: space-between;
     width: 100%;
-    max-height: 400px;
-    object-fit: cover;
+    gap: 30px;
+    padding: 0 15px; /* Add padding to avoid touching screen edges */
 }
 
 .monkey-name {
-    margin-top: 10px;
+    text-align: center;
+    font-weight: bolder;
 }
 
-.monkey-name input {
-    padding: 5px;
-    width: 100%;
-    box-sizing: border-box;
+.eassy {
+    width: 80%;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, rgb(159, 159, 194), rgb(187, 128, 187));
+    color: rgb(50, 38, 122);
+    max-width: 100%; /* Prevent overflowing */
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .hero {
+        height: 150vh;
+    }
+
+    .hero h1 {
+        font-size: 200px;
+        word-spacing: 20px;
+        letter-spacing: 10px;
+    }
+
+    .eassy {
+        width: 90%;
+    }
+
+    #type {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Media query for small mobile devices */
+@media (max-width: 480px) {
+    .hero {
+        height: 120vh;
+    }
+
+    .hero h1 {
+        font-size: 120px;
+        word-spacing: 10px;
+        letter-spacing: 5px;
+    }
+
+    .eassy {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .eassy h2 {
+        font-size: 24px;
+    }
+
+    #type {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
 }
